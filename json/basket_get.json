@@ -1,0 +1,20 @@
+{
+  "basket": [
+    {
+      "id": 1,
+      "title": "REBOX ZANE",
+      "url": "img/cart_items/cart_item_1.png",
+      "price": 48,
+      "count": 1
+    },
+    {
+      "id": 2,
+      "title": "REBOX ZANE",
+      "url": "img/cart_items/cart_item_2.png",
+      "price": 48,
+      "count": 1
+    }
+  ],
+  "result": 2,
+  "amount": 96
+}

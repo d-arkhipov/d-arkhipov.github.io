@@ -1,0 +1,233 @@
+@import "shopping-cart"
+@import "checkout.sass"
+
+.container_product
+  display: flex
+  padding-top: 55px
+
+.sidebar
+  width: 245px
+
+.sidebar_details
+  width: 100%
+  padding-top: 18px
+  transition: color 0.2s
+  color: #6f6e6e
+  & i
+    transition: 0.3s
+
+.sidebar_details summary
+  display: flex
+  justify-content: space-between
+  text-transform: uppercase
+  border-bottom: 1px solid #ebebeb
+  border-left: 5px solid #ef5b70
+  padding: 13px 10px
+  font-size: 14px
+  font-weight: 700
+  outline: none
+  cursor: pointer
+
+.sidebar_details[open]
+  color: #ef5b70
+  & i
+    transform: rotate(180deg)
+    transition: transform 0.3s
+
+.sidebar_details summary::-webkit-details-marker
+  display: none
+
+.sidebar_details ul
+  list-style-type: none
+  margin: 10px 0 0
+  padding: 0 0 0 15px
+
+.sidebar_details a
+  text-decoration: none
+  color: #6f6e6e
+  font-size: 14px
+  font-weight: 400
+  line-height: 33px
+  outline: none
+  transition: color 0.2s
+  &:hover
+    color: #ef5b70
+
+.product_right
+  margin-left: 50px
+  width: 100%
+
+.product_right_filter
+  display: flex
+  justify-content: space-between
+
+.product_right_filter_title
+  color: #6f6e6e
+  font-size: 14px
+  font-weight: 700
+  line-height: 20px
+  text-transform: uppercase
+
+.product_right_filter_left
+  width: 33%
+  & a
+    text-decoration: none
+    color: #6f6e6e
+    font-size: 14px
+    font-weight: 400
+    line-height: 26px
+    transition: color 0.2s
+    &:hover
+      color: #ef5b70
+  & span
+    text-decoration: none
+    color: #dfdfdf
+    font-size: 14px
+    font-weight: 400
+    line-height: 26px
+
+.product_right_filter_center
+  width: 33%
+  & input
+    margin: 0 5px 0 0
+
+.product_right_filter_center label
+  color: #6f6e6e
+  font-size: 14px
+  font-weight: 400
+  text-transform: uppercase
+  padding-right: 2px
+  display: inline-block
+  padding-bottom: 10px
+  width: 56px
+  transition: color 0.2s
+  &:hover
+    color: #ef5b70
+    cursor: pointer
+
+.product_right_filter_right
+  width: 33%
+  & input
+    -webkit-appearance: none
+    height: 6px
+    background-color: #f0f0f0
+    outline: none
+    width: 100%
+    cursor: pointer
+    &::-webkit-slider-thumb
+      -webkit-appearance: none
+      border-radius: 10px
+      background-color: #ef5b70
+      width: 14px
+      height: 14px
+      transition: transform 0.2s
+    &::-webkit-slider-thumb:active
+      transform: scale(1.5, 1.5)
+
+.product_right_filter_right_span
+  display: flex
+  justify-content: space-between
+  color: #6f6e6e
+  font-size: 14px
+  font-weight: 400
+
+.container_product_right_filter_right
+  display: flex
+  padding: 10px
+  background-color: #f3f3f3
+  margin-top: 20px
+
+.product_right_sort
+  border: 1px solid #ebebeb
+  background-color: #ffffff
+  color: #6f6e6e
+  font-size: 14px
+  font-weight: 400
+  padding-left: 10px
+  width: 133px
+  & select
+    padding: 5px
+    color: #6f6e6e
+    border: none
+    border-left: 1px solid #ebebeb
+    outline: none
+    margin-left: 7px
+
+.product_right_show
+  border: 1px solid #ebebeb
+  background-color: #ffffff
+  color: #6f6e6e
+  font-size: 14px
+  font-weight: 400
+  padding-left: 10px
+  width: 106px
+  margin-left: 10px
+  & select
+    padding: 5px
+    color: #6f6e6e
+    border: none
+    border-left: 1px solid #ebebeb
+    outline: none
+    margin-left: 7px
+
+.products
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  margin-top: 48px
+
+.pagination
+  display: flex
+  justify-content: space-between
+  margin: 20px 0 100px 0
+
+.pegination_left
+  color: #c4c4c4
+  font-size: 16px
+  font-weight: bold
+  padding: 15px 0
+  border-radius: 3px
+  border: 1px solid #ebebeb
+  background-color: #ffffff
+  width: 261px
+  & a
+    text-decoration: none
+    color: #c4c4c4
+    font-size: 16px
+    font-weight: bold
+    transition: color 0.2s
+    margin-left: 14px
+    &:nth-child(8)
+      margin-left: 0
+    &:hover
+      color: #ef5b70
+
+@keyframes buttonJump
+  0%
+    bottom: 0
+  100%
+    bottom: 10px
+
+.pegination_right
+  width: 150px
+  border-radius: 3px
+  border: 1px solid #ef5b70
+  background-color: #ffffff
+  text-align: center
+  position: relative
+  animation: buttonJump 0.3s ease-in infinite alternate
+  & a
+    text-decoration: none
+    color: #ef5b70
+    font-size: 16px
+    font-weight: bold
+    display: block
+    padding: 15px 0 15px 0
+    transition: background-color 0.2s
+    animation: buttonJump 0.3s ease-in infinite alternate
+    &:hover
+      background-color: #ef5b70
+      color: white
+
+.pegination_right:hover
+  animation-play-state: paused

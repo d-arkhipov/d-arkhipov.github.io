@@ -1,0 +1,238 @@
+$main-color: #ef5b70
+
+.shopping_cart_title
+  display: flex
+  justify-content: space-between
+  margin-top: 80px
+  border-bottom: 1px solid #eaeaea
+
+.shopping_cart_title h4
+  color: #222222
+  font-size: 13px
+  font-weight: 800
+  text-transform: uppercase
+
+.shopping_cart_title h4:first-child
+  margin-right: 342px
+
+.shopping_cart_product_details
+  margin-top: 20px
+  padding-bottom: 25px
+  display: flex
+  justify-content: space-between
+  align-items: center
+  border-bottom: 1px solid #eaeaea
+  & h6
+    padding-right: 22px
+    color: #656565
+    font-size: 13px
+    font-weight: 600
+  & input
+    width: 42px
+    padding: 6px 0 6px 10px
+    margin-right: 5px
+    border: 1px solid #eaeaea
+    color: #656565
+    font-size: 13px
+    font-weight: 600
+    outline: none
+  & a
+    color: #c0c0c0
+    font-size: 16px
+    font-weight: 400
+    transition: color 0.2s
+    margin-right: 15px
+    &:hover
+      color: $main-color
+
+.shopping_cart_product_details_left
+  display: flex
+  margin-right: 180px
+  & a
+    transition: transform 0.5s
+    &:hover
+      transform: scale(1.1)
+
+.shopping_cart_product_details_text
+  margin-left: 20px
+  font-size: 13px
+  color: #6f6e6e
+  font-weight: 600
+  line-height: 20px
+  & h4
+    color: #222222
+    font-size: 13px
+    font-weight: 600
+    text-transform: uppercase
+    margin: 10px 0 26px 0
+  & span
+    font-weight: 400
+    margin-left: 5px
+
+.shopping_cart_product_buttons_block
+  display: flex
+  justify-content: space-between
+  margin: 40px 0 40px 0
+  & a
+    text-decoration: none
+    padding: 15px 38px
+    border: 1px solid #eaeaea
+    color: #4a4a4a
+    font-size: 14px
+    font-weight: 700
+    text-transform: uppercase
+    transition: all 0.2s
+    &:hover
+      color: white
+      background-color: $main-color
+
+.shopping_cart_product_shopping_form
+  display: flex
+  justify-content: space-between
+  & h2
+    color: #222222
+    font-size: 16px
+    font-weight: 700
+    text-transform: uppercase
+
+.shipping_adress summary::-webkit-details-marker
+  display: none
+
+.shipping_adress details
+  list-style-type: none
+  margin-top: 18px
+  & ul
+    margin: 0
+    padding: 0
+    list-style-type: none
+    & li
+      padding: 10px 16px
+      color: #b1b1b1
+      font-size: 13px
+      font-weight: 300
+  &[open] i
+    transform: rotate(180deg)
+    transition: transform 0.3s
+  & i
+    margin-left: 249px
+    transition: transform 0.3s
+  & summary
+    color: #b1b1b1
+    font-size: 13px
+    font-weight: 300
+    outline: none
+    padding: 16px
+    border: 1px solid #eaeaea
+
+.shipping_adress form
+  margin-top: 20px
+  & input
+    color: #b1b1b1
+    font-size: 13px
+    font-weight: 300
+    outline: none
+    padding: 16px
+    border: 1px solid #eaeaea
+    width: 321px
+    &::-webkit-input-placeholder
+      font-family: 'Lato', sans-serif
+      color: #b1b1b1
+      font-size: 13px
+      font-weight: 300
+
+.shipping_adress a
+  padding: 12px 15px
+  text-decoration: none
+  border: 1px solid #eaeaea
+  margin-top: 20px
+  margin-bottom: 75px
+  display: inline-block
+  color: #4a4a4a
+  font-size: 11px
+  font-weight: 800
+  text-transform: uppercase
+  transition: all 0.2s
+  &:hover
+    color: white
+    background-color: $main-color
+
+.coupon_discount form
+  margin-top: 20px
+  & input
+    color: #b1b1b1
+    font-size: 13px
+    font-weight: 300
+    outline: none
+    padding: 16px
+    border: 1px solid #eaeaea
+    width: 321px
+    &::-webkit-input-placeholder
+      font-family: 'Lato', sans-serif
+      color: #b1b1b1
+      font-size: 13px
+      font-weight: 300
+
+.coupon_discount span
+  color: #000000
+  font-size: 14px
+  font-weight: 400
+  margin-top: 10px
+  display: inline-block
+
+.coupon_discount a
+  padding: 12px 15px
+  text-decoration: none
+  border: 1px solid #eaeaea
+  margin-top: 20px
+  margin-bottom: 75px
+  display: inline-block
+  color: #4a4a4a
+  font-size: 11px
+  font-weight: 800
+  text-transform: uppercase
+  transition: all 0.2s
+  &:hover
+    color: white
+    background-color: $main-color
+
+.total
+  background-color: #f5f3f3
+  padding: 40px
+  text-align: right
+  height: 130px
+  & a
+    padding: 12px 15px
+    text-decoration: none
+    margin-top: 20px
+    margin-bottom: 75px
+    display: inline-block
+    color: #ffffff
+    font-size: 16px
+    font-weight: 700
+    background-color: $main-color
+    text-transform: uppercase
+    transition: all 0.2s
+    &:hover
+      filter: brightness(80%)
+      box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16)
+
+.total h6
+  color: #4a4a4a
+  font-size: 11px
+  font-weight: 600
+  text-transform: uppercase
+  margin: 0
+  & span
+    margin-left: 20px
+
+.total h3
+  margin: 10px 0 0
+  color: #222222
+  font-size: 16px
+  font-weight: 700
+  text-transform: uppercase
+  border-bottom: 1px solid #eaeaea
+  padding-bottom: 20px
+  & span
+    margin-left: 20px
+    color: $main-color
